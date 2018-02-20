@@ -18,7 +18,6 @@ public class BankAccount {
         STUDENT,
         WORKPLACE
     }
-
     private int accountNumber;
     public BankAccountType accountType;
     private double accountBalance;

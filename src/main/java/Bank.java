@@ -8,9 +8,14 @@
  * @see <a href="https://cs125.cs.illinois.edu/lab/8/">Lab 8 Description</a>
  */
 public class Bank {
+    /**
+     * the name of the bank.
+     */
+    private String bankName;
 
-    public String bankName;
-
+    /**
+     * the bank.
+     */
     public Bank() {
         bankName = "Illini Bank";
     }
@@ -25,10 +30,19 @@ public class Bank {
      * @param amount to withdraw (double)
      * @return boolean
      */
+    /**
+     * checking.
+     */
+    public double CHECKINGS;
     public boolean withdrawMoney(final BankAccount bankAccount, final double amount) {
         /*
          * Implement this function
          */
+        if (CHECKINGS >= amount) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**
@@ -45,6 +59,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return false;
     }
 
     /**
@@ -64,6 +79,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return false;
     }
 
     /**
@@ -79,7 +95,10 @@ public class Bank {
          */
     }
 
-    public static int totalAccounts = 0;
+    /**
+     * the total number of accounts.
+     */
+    private static int totalAccounts = 0;
     /**
      * Uses static variable to get number of bank accounts opened.
      *
@@ -89,6 +108,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return 0;
     }
 
     /**
